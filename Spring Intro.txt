@@ -1,0 +1,80 @@
+What is Spring framework:
+=========================
+Spring is a open source Java based framework 
+release in 2004 
+current stable version is 6.x 
+it is used to develop web applications
+=========================================
+Spring is developed by a company VM ware
+Struts developed by a company Apache 
+hibernate is developed by RedHat 
+====================================
+
+Spring has been developed in Modular fashion
+
+Spring core 
+Spring context 
+Spring AOp 
+Spring Jdbc 
+Spring ORM 
+Spring web 
+Spring security 
+Spring Batch 
+Spring cloud 
+
+Spring framework will not force all Modules to use 
+There is No relationship between one Module to Other Module 
+
+Spring core :
+============
+Base Module of the Spring 
+It is Providing fundamentals of the Spring 
+       -> IOC 
+       -> DI 
+       -> Autowiring 
+
+Note: We can develop stand alone Apps 
+IOC -> it will create OBjects , available in Spring core 
+
+Spring context :
+==================
+Spring context is responsible for Managing configuration 
+Object creation will be decided by Spring context
+
+SPring AOP :
+===========
+Integration part will be taken by AOP 
+
+Spring JDBC :
+=============
+Spring JDBC 
+Boiler plate code 
+
+
+Registering the Driver (spring)
+get Connection (spring framework)
+create stmt (spring framework)
+Execute Query (programmer)
+Process result (spring framework)
+close connection s
+====================================
+Spring ORM :
+=============
+Object relational Mapping 
+hibernate is a ORM framework 
+ORM will represent data in form of Objects 
+
+Spring web mvc :
+==================
+It supports Multiple presentation Techniques 
+   JSP , Thymaleaf
+It provides support to develop APis 
+
+Spring Rest Module :
+====================
+It is used to develop Distributed applications
+One App wanted to communicate with other Apis 
+
+Amazon 
+hotstart
+netflix

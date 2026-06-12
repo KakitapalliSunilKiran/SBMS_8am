@@ -1,0 +1,84 @@
+What is Spring :
+===============
+
+It is a framework to develop Java based applications 
+
+Programming Languages:
+=====================
+C , C++ , Java , Python , .net 
+
+It is a set of Instructions 
+PL limited capablities
+
+Human to HUman - Language
+Human with Computer - PL is required
+
+Technologies:
+=============
+on top of Programming langues Technologies are build 
+JDBC , Servlets ,JSP etc...
+
+Technologies have boiler plate code
+
+Framework:
+==========
+in Technologies we have a lot of Boiler plate code 
+in Framework we are going to remove our boiler plate code 
+
+Connection con 
+Prepared statement
+ResultSet 
+Procession dto 
+exception Handling 
+closing connect 
+
+5 methods - 30 lines 
+100 classes -> 100*5 = 500 * 6 = 3000 lines 
+============================================
+
+we just need only 1 line 
+
+Why Jdbc is outdated :
+======================
+1. it requires lot of boiler plate code 
+2. if database is Migrating then we have syntax issues
+   ie there is no loose coupling 
+
+Why servlets has been outdated :
+================================
+It is used to write controller layer logic 
+HttpServletRequest request , HttpServletResponse response
+
+request.getParameter("marks")
+request.getParameter("marks")
+request.getParameter("marks") 
+
+500*10= 5000 lines 
+==============================================
+Demerits of technologies:
+-------------------------
+Duplicate code 
+More lines of code 
+More chances of bugs
+More chances of exceptions 
+Maintenance is very difficult 
+==============================================
+
+Types of Logic:
+===================
+1. Common logic (is same for all Apps)
+2. Business Logic (is different from different sector) 
+==========================================================
+
+Framework :
+==========
+it is semisoftware , which provides the common Languge required 
+for the developer 
+Common logic is already available in Framework
+So using framework we are going to develop app Quickly
+===============================================================
+No duplicate code
+faster development 
+less lines of code 
+less bugs 
+easy maintenance

@@ -1,0 +1,11 @@
+Spring boots internally using this strategy design pattern 
+
+it is part LLD (Low Level design) 
+===========================================================
+There are certain rules in strategy design pattern :
+==========================================================
+1. communication should be happen via interfaces 
+2. we can dynamically inject particular instance based on requirement 
+3. It should prefer has a relationship over is A relationship 
+====================================================================
+
