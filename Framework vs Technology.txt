@@ -82,3 +82,21 @@ faster development
 less lines of code 
 less bugs 
 easy maintenance
+
+Examples of framework :
+=======================
+    Struts 
+    Hibernate
+    JSF 
+    Spring 
+    Spring BOOT
+
+Struts -> it is used to write web layer (controller logic)
+
+Servlets -> IT is also provide controller logic 
+=======================================================
+Hibernate: It is used to interact with DB 
+
+JDBC : -It is also used to intercat with DB 
+====================================================
+There is a concept of Three tier Application
