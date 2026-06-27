@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+   <!--  <bean id="g" class="carapp.GasEngine"></bean>
+    <bean id="d" class="carapp.DieselEngine"></bean>
+    <bean id="p" class="carapp.PetrolEngine"></bean>
+    
+    <bean id="c" class="carapp.Car">
+    	 <property name="e" ref="d"></property>  
+       <constructor-arg name="e" ref="g"></constructor-arg> 
+    </bean>  -->
+    <!-- i c , n r  -->
+    
+  <!--  Java Full Stack 
+    Core Java Jdbc
+    Core Sb ms docker kubernate cloud and FE  --> 
+    
+
+    <bean id="d" class="carapp.DieselEngine"></bean>
+    <bean id="c" class="carapp.Car" autowire="constructor"></bean>
+    
+    
+
+</beans>
