@@ -1,0 +1,20 @@
+
+@SpringBootApplication 
+     it is combination of 3 annotations 
+        1. @SpringBootConfiguration
+        2. @ComponentScan
+        3. @EnableAutoconfiguration 
+//------------------------------------------------
+return type of run method :
+===========================
+ConfigurableApplicationContext ctx =
+
+creatiing listner
+using listners preparing environment
+printing banner 
+preparing context 
+stating listners 
+//-----------------------------
+
+class org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext
+class org.springframework.context.annotation.AnnotationConfigApplicationContext

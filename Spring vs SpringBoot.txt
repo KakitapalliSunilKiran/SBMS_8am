@@ -1,0 +1,32 @@
+Spring vs Spring Boot 
+
+Dependency Injection is there in the Spring core 
+Dependency Injection + Autoconfiguration is there in the Spring Boot 
+
+Datasource
+EntityManagerFactory 
+TransactionManager 
+DispatcherServlet 
+Embeded Tomcat
+//---------------------------------------------------------
+Spring has no inmemory database 
+Spring boot has inmemory database (h2 database)
+
+localhost:8080/h2-console
+//---------------------------------------------------
+Spring doesnt have emebed server 
+Spring Boot you have embeded Server (Tomcat)
+//-------------------------------------------------------------
+There is no dependency resoloution in Spring core 
+There is dependency resolution in Spring boot . 
+as there is a parent version 3.x accordinlgy it will download 
+//----------------------------------------------------
+in Spring Boot you have support for health checks through Actuator 
+in Spring core there is no such mechanism 
+===========================================================
+in Spring core there is xml configuration
+in Spring Boot we have annotation based configuration
+=========================================================
+
+
+

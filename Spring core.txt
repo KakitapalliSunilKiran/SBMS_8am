@@ -99,7 +99,13 @@ pom.xml -> Maven descriptor
 
 </beans>
 ==================================================
-
+Autowiring is of 4 types in Spring core :
+====================================
+byName
+byType
+Constructor
+no 
+======================================
 
 
 C:\Users\SUNIL KIRAN\Documents\kafka\apache-zookeeper-3.8.6-bin\apache-zookeeper-3.8.6-bin\bin
