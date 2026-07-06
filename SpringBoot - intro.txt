@@ -18,3 +18,45 @@ stating listners
 
 class org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext
 class org.springframework.context.annotation.AnnotationConfigApplicationContext
+===================
+@SpringBootApplication
+
+@ComponentScan
+@EnableAutoconfiguration
+@Configuration
+=====================================================
+//@Get Mapping : if you are developing an Api, if its fetching some data then annotate
+//it as GetMapping
+
+//@PostMapping : if you are developing an API , if its persisting the data in db 
+// then go for post mapping
+
+//@PutMapping : if you are trying to update the Record that is put Mapping 
+
+//@Delete Mapping: if you are trying to remove the record from the DB , ie put Mapping
+
+//@PatchMapping and 
+//what is difference between post and put
+
+//@RestController -> to indicate it is controller Layer 
+//@Service -> to indicate it is service layer
+//@Repository class -> to indicate it is Repository class
+//@Component
+
+=======================================================================
+
+Using Reflection Api framework will scan classes for Autowired annotations
+and it will inject
+======================================================================
+Field Injection :
+=================
+Advantages:
+Simple and easy to use 
+Challenges:
+Private fields can be accessed from Outside the class 
+ie it is violation of OOPS principle
+Final fields are not allowed
+
+Setter Injection
+
+Constructor Injection
