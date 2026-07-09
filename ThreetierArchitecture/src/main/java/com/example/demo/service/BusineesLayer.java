@@ -7,9 +7,16 @@ import com.example.demo.repository.DatabaseLayer;
 
 @Service
 public class BusineesLayer {
-	@Autowired
-	DatabaseLayer dl;
+	//@Autowired
+	private final DatabaseLayer dl;
 	
+	
+	public BusineesLayer(DatabaseLayer dl) {
+		super();
+		this.dl = dl;
+	}
+
+
 	public String save() {
 		return dl.save();
 	}

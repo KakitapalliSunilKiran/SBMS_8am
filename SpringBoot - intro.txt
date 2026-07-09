@@ -55,8 +55,35 @@ Simple and easy to use
 Challenges:
 Private fields can be accessed from Outside the class 
 ie it is violation of OOPS principle
-Final fields are not allowed
+Final fields are not allowed 
+@Autowired is Mandatory
+--------------------------------
 
 Setter Injection
 
-Constructor Injection
+Advantages of Setter Injection:
+==============================
+private fields can be injected via setter methods 
+At any point of time you can change the Instance via calling setter function 
+
+Challenges : 
+@Autowired is Mandatory 
+in setter injection also final fields are not allowed 
+========================================================================
+
+
+
+
+Constructor Injection 
+=====================
+Advantages:
+===========
+@Autowired is Optional 
+final fields are allowed 
+
+
+
+
+bin\windows\kafka-storage.bat format -t SzxwbbYyTK2syGCdbOXRuQ -c config\kraft\server.properties
+
+bin\windows\kafka-storage.bat format -t 5CnD-c97QrOYinkNWqgcAw -c config\server.properties

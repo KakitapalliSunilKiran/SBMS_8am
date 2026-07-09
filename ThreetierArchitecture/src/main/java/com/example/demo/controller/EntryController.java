@@ -9,9 +9,33 @@ import com.example.demo.service.BusineesLayer;
 @RestController
 public class EntryController {
 	
+//	@Autowired
+	private BusineesLayer bl;
+	
+	public EntryController(BusineesLayer bl) 
+	{
+		super();
+		System.out.println("I am in constructor Injection");
+			this.bl = bl;
+     }
+	
 	@Autowired
-	BusineesLayer bl;
-//	
+	public void setBl(BusineesLayer bl) 
+	{
+		System.out.println("I am in setter Injection");
+		this.bl=bl;
+	}
+	
+	
+	public BusineesLayer getBl() {
+		return bl;
+	}
+
+
+
+
+
+
 	@GetMapping("/fetch")
 	public String getMessage() {
 		
