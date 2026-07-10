@@ -1,0 +1,13 @@
+@RestController
+@Service
+@Repository
+@Qualifier
+@Primary
+@Autowired
+@RequestMapping
+@getMapping
+@postMapping
+@putMapping
+@DeteleteMapping
+@SpringBootApplication -> @EnableAutoConfiguration., @SpringBootConfiguration
+                         @ComponenetScan
