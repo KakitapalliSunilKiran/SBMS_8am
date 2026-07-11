@@ -1,0 +1,5 @@
+Directly using Interface we can create Repolayer 
+then frame work will create child class for that repo layer
+and framework will create instance for that child class 
+then framework will place that instance in IOC container
+========================================================
