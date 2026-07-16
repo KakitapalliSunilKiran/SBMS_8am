@@ -1,0 +1,161 @@
+ResponseEntity 
+Status codes 
+Centralized Exception Handling
+=======================================
+Status codes:
+=============
+2XX Status codes
+200 Ok for Get Apis , put and get
+201 Created for post Apis 
+204 No content for delete Api
+=============================
+4XX Status codes
+401 Authentication if you use wrong username and
+    password we will get unauthorized error 
+403 Authorization Error 
+    Role based error 
+400 Bad request 
+404 Path not found , Resource Not found 
+405 Method Not allowed
+412 Pre condition failure error
+415 Unsupported Media Type  
+============================== 
+500 Internal Server Error 
+====================================
+ResponseEntity :
+================
+
+What is ResponseEntity?
+
+ResponseEntity is a Spring class that represents an HTTP response.
+It allows you to control:
+
+✔ Response body
+✔ HTTP status code
+✔ HTTP headers
+
+So instead of just returning data, you return a complete HTTP response.
+
+📌 Why do we use ResponseEntity?
+
+Because a REST API should return proper HTTP responses like:
+
+200 OK
+
+201 CREATED
+
+404 NOT FOUND
+
+500 INTERNAL SERVER ERROR
+
+Using ResponseEntity, you can specify these statuses and messages yourself.
+
+🌟 Basic Syntax
+ResponseEntity<T>
+
+
+Where T is the type of the response body, such as:
+
+ResponseEntity<Student>
+
+ResponseEntity<String>
+
+ResponseEntity<List<Student>>
+
+ResponseEntity<Void>
+
+🧠 Example 1: Returning data with status
+return ResponseEntity.ok(student);
+
+
+This returns:
+
+Body: student
+
+Status: 200 OK
+
+🧠 Example 2: Returning a custom HTTP status
+return new ResponseEntity<>(student, HttpStatus.CREATED);
+
+
+This returns:
+
+Body: student
+
+Status: 201 CREATED
+
+🧠 Example 3: Returning error message
+return ResponseEntity
+        .status(HttpStatus.NOT_FOUND)
+        .body("Student not found");
+
+
+This sends:
+
+Body: "Student not found"
+
+Status: 404 NOT FOUND
+
+🧠 Example 4: Sending no body (empty response)
+return ResponseEntity.noContent().build();
+
+
+This returns:
+
+204 NO CONTENT
+
+=========================================================
+You can integrate ResponseEntity with headers very easily in Spring.
+Headers allow you to send additional information back to the client such as:
+
+✔ Custom metadata
+✔ Authorization info
+✔ Pagination details
+✔ Timestamps
+✔ Content type hints
+
+⭐ 1. Adding Headers with ResponseEntity
+Example:
+@GetMapping("/hello")
+public ResponseEntity<String> sayHello() {
+
+    HttpHeaders headers = new HttpHeaders();
+    headers.add("App-Version", "1.0");
+    headers.add("Author", "Sunil");
+
+    return new ResponseEntity<>(
+            "Hello World!",
+            headers,
+            HttpStatus.OK
+    );
+}
+
+Response sent:
+
+Body: "Hello World!"
+
+Status: 200 OK
+
+Headers:
+=========================================
+
+2XX series 
+
+200 Ok   --- get mapping 
+201 created --- post mapping
+204 no content -- delete mapping
+
+4XX series
+400 bad request :  for wrong input 
+401 Un Authentication (if the credentials are wrong)
+403 Un Authorized (Roles are not match)
+404 Notfound
+405 Method Not allowed
+
+5XX series
+500 internal server error
+
+You should integrate these status code with with Response entity
+to make response as Http Response
+==============================================
+
