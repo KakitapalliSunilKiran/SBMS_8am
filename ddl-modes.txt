@@ -1,0 +1,34 @@
+create :
+it flushes the old data , no matter how many records 
+are there
+
+Update :
+it persists the old data , and it updates from there 
+=================================================
+
+@ControllerAdvice : class level
+@ExceptionHandler: function level 
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+@ControllerAdvice
+public class GlobalExceptionHandler {
+
+    @ExceptionHandler(StudentNotFound.class)
+    public ResponseEntity<String> handleStudentNotFound(StudentNotFound ex) {
+        return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<String> handleGeneralException(Exception ex) {
+        return new ResponseEntity<>(
+                "Something went wrong: " + ex.getMessage(),
+                HttpStatus.INTERNAL_SERVER_ERROR
+        );
+    }
+}
+
+

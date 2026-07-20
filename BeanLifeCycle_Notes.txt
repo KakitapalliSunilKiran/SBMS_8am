@@ -1,0 +1,26 @@
+Bean is an Object 
+Beans are created Spring IOC Container
+framework is going to Inject the bean and its going to destroy the bean 
+
+==========================================================
+
+1. Application State -> This as a developer we need to start 
+2. IOC container start -> init web emb context 
+3. Construct the bean -> 
+          Classes which ever having annotations
+          @Component 
+          @RestController
+          @Service
+          @Repository
+          @Bean and @Configuration 
+4. Injecting the dependncies 
+    @Autowired 
+    Customer c;
+
+5. @PostConstruct
+     This is a function level annotation 
+     which will be automatically executed after Injecting the dependncies
+
+6. Using the Bean 
+   
+7. @PreDestroy
